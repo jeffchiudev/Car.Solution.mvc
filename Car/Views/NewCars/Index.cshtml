@@ -1,0 +1,17 @@
+@using Car.Models;
+
+<h1>Available Cars on our Lot:</h1>
+
+@if (Model.Count == 0)
+{
+    <p>Sorry, there are no cars left on the lot!</p>
+}
+<ul>    
+    @foreach (NewCar car in Model)
+    {
+        <li>Make: @car.MakeModel</li>
+        <p>Price: @car.Price</p>
+        <p>Miles: @car.Miles</p><br>
+    }
+</ul>
+<a href="/newcars/new">Add a new car.</a>

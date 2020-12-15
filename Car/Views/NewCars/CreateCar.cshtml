@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Dealership</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+</head>
+<body>
+    <div class="container">
+        <form action="/newcars" method="post">
+            <div class="form-group">
+                <label for="makeModel">Add make and model car</label>
+                <input id="makeModel" name="makeModel" type="text" class="form-control">
+                <label for="miles">Add mileage</label>
+                <input id="miles" name="miles" type="number" class="form-control">
+                <label for="price">Add price</label>
+                <input id="price" name="price" type="number" class="form-control">
+                <button type="submit" class="btn btn-primary">Submit New Car</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
